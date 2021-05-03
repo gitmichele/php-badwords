@@ -16,8 +16,25 @@
         $badword = $_GET['badword'];
         $replace = '***';
         $censored_string = str_replace($badword, $replace, $text);
+        $breakRule = '<br>';
 
-        var_dump($censored_string);
+        echo('Paragrafo originale:');
+        echo($breakRule);
+        echo($text);
+    
+        echo($breakRule);
+        echo($breakRule);
+
+        echo('Lunghezza paragrafo originale: ');
+        echo(strlen($text));
+
+        echo($breakRule);
+        echo($breakRule);
+
+
+        echo('Paragrafo censurato:');
+        echo($breakRule);
+        echo($censored_string);
     ?>
 
 </h1>
